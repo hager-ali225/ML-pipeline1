@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true  # يحل التحذير بتاع Node.js 20
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true  # يحل التحذيرات بتاع Node.js
 
 jobs:
 
@@ -19,7 +19,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: 3.10
+          python-version: 3.10   # لازم 3.10 بالظبط
 
       - name: Install Dependencies
         run: |
